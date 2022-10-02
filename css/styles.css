@@ -1,3 +1,317 @@
 :root {
+--main-color-text: #212121;
+--color-text-paragraf: #757575;
+
+
 
 }
+
+
+/* Page index style */
+
+/* Header style */
+.nav-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color:  var(--main-color-text);
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #2196F3;
+}
+
+
+.mail-link, .tel-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--color-text-paragraf);
+}
+
+.mail-link:hover, .mail-link:focus, 
+.tel-link:hover, .tel-link:focus {
+    color: #2196F3;
+}
+
+.nav-list, .header-contacts {
+list-style-type: none;
+}
+
+/* Main style */
+
+/* Section Hero */
+.main-hero-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--main-color-text);
+}
+
+.main-hero-button{
+    background: #2196F3;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+
+/* Section Features */
+.hidden-header {
+    display: none;
+}
+
+.features-head {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color-text);
+}
+
+.features-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(---color-text-paragraf);
+}
+
+.features-list {
+    list-style-type: none;
+}
+
+/* Section Activity */
+.activity-header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color-text);
+}
+
+.activity-list {
+    list-style-type: none;
+}
+
+/* Section Team */
+.team-header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color-text);
+}
+
+.member-name {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color-text);
+}
+
+.position {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(---color-text-paragraf);
+}
+
+.team-list {
+    list-style-type: none;
+}
+
+/* Footer stile */
+.address-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--main-color-text);
+}
+
+.footer-mail-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(---color-text-paragraf);
+}
+
+.footer-tel-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(---color-text-paragraf);
+}
+
+.footer-address-list {
+    list-style-type: none;
+}
+
+
+/* Page portfolio style */
+
+
+/* Portfolio Header style */
+.portfolio-nav-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-color-text);
+}
+
+.portfolio-nav-link:hover, .portfolio-nav-link:focus {
+    color: #2196F3;
+}
+
+.portfolio-mail-link, .portfolio-tel-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(---color-text-paragraf);
+}
+
+.portfolio-mail-link:hover, .portfolio-mail-link:focus,
+.portfolio-tel-link:hover, .portfolio-tel-link:focus {
+    color: #2196F3;
+}
+
+/* Portfolio Main style */
+
+
+/* Portfolio filter button section */
+
+.portfolio-filter-hidden-header {
+    display: none;
+}
+
+
+.filter-button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color-text);
+}
+
+.filter-button:hover, .filter-button:focus {
+    background: #2196F3;
+    color: #FFFFFF;
+}
+
+.filter-list {
+    list-style-type: none;
+}
+
+.portfolio-hidden-header {
+    display: none;
+}
+
+/* Portfolio section */
+.portfolio-name {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-color-text);
+}
+
+.portfolio-type {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: var(---color-text-paragraf);
+}
+
+.portfolio-list {
+    list-style-type: none;
+}
+
+
+/* Portfolio footer style */
+.portfolio-address-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--main-color-text);
+}
+
+.portfolio-footer-mail-link, .portfolio-footer-tel-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--main-color-text);
+}
+
+.portfolio-address-list {
+    list-style-type: none;
+}
+
+
+
+
