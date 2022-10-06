@@ -101,8 +101,8 @@ body {
 }
 
 .main-hero-button{
-    background-color: var(--hero-button-blue-color);
-
+    background-color: var(--primary-blue-color);
+    cursor: pointer;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -112,6 +112,10 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--primary-white-color);
+}
+
+.main-hero-button:hover, .main-hero-button:focus {
+    background-color: var(--hero-button-blue-color);
 }
 
 /* Section Features */
@@ -263,6 +267,24 @@ body {
 
 
 /* Portfolio Header style */
+.portfolio-header-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--header-logo-color);
+}
+
+.portfolio-header-logo-beginning {
+    color: var(--primary-blue-color);
+}
+
+.portfolio-header-logo {
+    text-decoration: none;
+}
+
+
 .portfolio-nav-link {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -316,6 +338,8 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-color-text);
+    background-color: var(--background-gray-color);
+    cursor: pointer;
 }
 
 .filter-button:hover, .filter-button:focus {
@@ -327,11 +351,7 @@ body {
     list-style-type: none;
 }
 
-.portfolio-hidden-header {
-    display: none;
-}
 
-/* Portfolio section */
 .portfolio-name {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -347,7 +367,7 @@ body {
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
-    color: var(---color-text-paragraf);
+    color: var(--color-text-paragraf);
 }
 
 .portfolio-list {
@@ -356,13 +376,35 @@ body {
 
 
 /* Portfolio footer style */
+.portfolio-footer {
+    background-color: var(--hero-footer-black-color);
+}
+
+.portfolio-footer-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--primary-white-color);
+}
+
+.portfolio-footer-logo-beginning {
+    color: var(--primary-blue-color);
+}
+
+.portfolio-footer-logo {
+    text-decoration: none;
+}
+
+
 .portfolio-address-link {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: var(--main-color-text);
+    color: var(--primary-white-color);
 }
 
 .portfolio-footer-mail-link, .portfolio-footer-tel-link {
@@ -371,11 +413,15 @@ body {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: var(--main-color-text);
+    color: var(--alternativ-gray-color-rgba);
 }
 
 .portfolio-address-list {
     list-style-type: none;
+}
+
+.portfolio-address-link, .portfolio-footer-mail-link, .portfolio-footer-tel-link {
+    text-decoration: none;
 }
 
 
