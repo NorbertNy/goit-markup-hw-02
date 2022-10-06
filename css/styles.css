@@ -1,18 +1,45 @@
 :root {
 --main-color-text: #212121;
+--header-logo-color: #000000;
 --color-text-paragraf: #757575;
-
-
+--primary-blue-color: #2196F3;
+--primary-white-color: #FFFFFF;
+--hero-footer-black-color: #2F303A;
+--hero-button-blue-color: #188CE8;
+--background-gray-color: #F5F4FA;
+--alternativ-gray-color-rgba: rgba(255, 255, 255, 0.6);
 
 }
 
 
 /* Page index style */
 
+
+body {
+    background-color: var(--primary-white-color);
+}
 /* Header style */
+
+
+.header-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--header-logo-color);
+}
+
+.header-logo-beginning {
+    color: var(--primary-blue-color);
+}
+
+.header-logo, .header-logo-beginning {
+    text-decoration: none;
+}
+
 .nav-link {
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -21,13 +48,13 @@
 }
 
 .nav-link:hover, .nav-link:focus {
-    color: #2196F3;
+    color: var(--primary-blue-color);
 }
 
 
+
 .mail-link, .tel-link {
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -37,33 +64,46 @@
 
 .mail-link:hover, .mail-link:focus, 
 .tel-link:hover, .tel-link:focus {
-    color: #2196F3;
+    color: var(--primary-blue-color);
 }
 
 .nav-list, .header-contacts {
-list-style-type: none;
+    list-style-type: none;
 }
+
+.nav-link, .mail-link, .tel-link {
+    text-decoration: none;
+}
+
+
+
 
 /* Main style */
 
+
 /* Section Hero */
+
+.main-hero {
+    background-color: var(--hero-footer-black-color);
+}
+
+
 .main-hero-text {
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--main-color-text);
+    color: var(--primary-white-color);
+    
 }
 
 .main-hero-button{
-    background: #2196F3;
+    background-color: var(--hero-button-blue-color);
 
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
@@ -71,7 +111,7 @@ list-style-type: none;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--primary-white-color);
 }
 
 /* Section Features */
@@ -80,8 +120,7 @@ list-style-type: none;
 }
 
 .features-head {
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -91,13 +130,12 @@ list-style-type: none;
 }
 
 .features-text {
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
-    color: var(---color-text-paragraf);
+    color: var(--color-text-paragraf);
 }
 
 .features-list {
@@ -106,8 +144,7 @@ list-style-type: none;
 
 /* Section Activity */
 .activity-header {
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -121,20 +158,23 @@ list-style-type: none;
 }
 
 /* Section Team */
+.team {
+    background-color: var(--background-gray-color);
+}
+
+
 .team-header {
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-color-text);
 }
 
 .member-name {
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -144,14 +184,17 @@ list-style-type: none;
 }
 
 .position {
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(---color-text-paragraf);
+    color: var(--color-text-paragraf);
+}
+
+.team-member {
+    background-color: var(--primary-white-color);
 }
 
 .team-list {
@@ -159,38 +202,60 @@ list-style-type: none;
 }
 
 /* Footer stile */
+.page-footer {
+    background-color: var(--hero-footer-black-color);
+}
+
+.footer-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--primary-white-color);
+}
+
+.footer-logo-beginning {
+    color: var(--primary-blue-color);
+}
+
+.footer-logo {
+    text-decoration: none;
+}
+
 .address-link {
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: var(--main-color-text);
+    color: var(--primary-white-color);
 }
 
 .footer-mail-link {
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: var(---color-text-paragraf);
+    color: var(--alternativ-gray-color-rgba);
 }
 
 .footer-tel-link {
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: var(---color-text-paragraf);
+    color: var(--alternativ-gray-color-rgba);
 }
 
 .footer-address-list {
     list-style-type: none;
+}
+
+.address-link, .footer-mail-link, .footer-tel-link {
+    text-decoration: none;
 }
 
 
@@ -199,8 +264,7 @@ list-style-type: none;
 
 /* Portfolio Header style */
 .portfolio-nav-link {
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -209,22 +273,29 @@ list-style-type: none;
 }
 
 .portfolio-nav-link:hover, .portfolio-nav-link:focus {
-    color: #2196F3;
+    color: var(--primary-blue-color);
+}
+
+.portfolio-nav-list, .portfolio-header-contacts {
+    list-style-type: none;
+}
+
+.portfolio-nav-link, .portfolio-mail-link, .portfolio-tel-link {
+    text-decoration: none;
 }
 
 .portfolio-mail-link, .portfolio-tel-link {
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(---color-text-paragraf);
+    color: var(--color-text-paragraf);
 }
 
 .portfolio-mail-link:hover, .portfolio-mail-link:focus,
 .portfolio-tel-link:hover, .portfolio-tel-link:focus {
-    color: #2196F3;
+    color: var(--primary-blue-color);
 }
 
 /* Portfolio Main style */
@@ -238,8 +309,7 @@ list-style-type: none;
 
 
 .filter-button {
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -249,8 +319,8 @@ list-style-type: none;
 }
 
 .filter-button:hover, .filter-button:focus {
-    background: #2196F3;
-    color: #FFFFFF;
+    background-color: var(--primary-blue-color);
+    color: var(--primary-white-color);
 }
 
 .filter-list {
@@ -263,8 +333,7 @@ list-style-type: none;
 
 /* Portfolio section */
 .portfolio-name {
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -273,8 +342,7 @@ list-style-type: none;
 }
 
 .portfolio-type {
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
@@ -289,8 +357,7 @@ list-style-type: none;
 
 /* Portfolio footer style */
 .portfolio-address-link {
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -299,8 +366,7 @@ list-style-type: none;
 }
 
 .portfolio-footer-mail-link, .portfolio-footer-tel-link {
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
